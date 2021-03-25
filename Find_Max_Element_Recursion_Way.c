@@ -40,15 +40,16 @@ int rec_max(int *T, int N) {//  PARAMETERS : ARRAY AND SIZE OF ARRAY
 	if(N == 1) // IF THE ARRAY HAS ONLY ONE ELEMENT THEN THE MAX ELEMENT IS FIRST "T[0]" 
 		return T[0];
 	
-	if(T[N - 1] > rec_max(T, N-1))
+	if(T[N - 1] > rec_max(T, N-1))//  if turn ">" to "<" you will receive the minimum element
 		return T[N - 1];
 }
 
 int serial_max(int *T, int N) {//  PARAMETERS : ARRAY AND SIZE OF ARRAY
     int i, max = 0;
-    
+	
+    // THE SERIAL WAY
     for(i = 1; i < N; i++) {
-        if(T[max] < T[i]) {// THE SERIAL WAY
+        if(T[max] < T[i]) {//  if turn "<" to ">" you will receive the minimum element
             max = i;
         }
     }
