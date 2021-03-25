@@ -1,5 +1,4 @@
-//										FIND THE MAX ELEMENT WITH RECURSION AND NOT
-//													
+//									FIND THE MAX ELEMENT WITH RECURSION				
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -9,7 +8,7 @@
 //	FUNCTIONS
 
 int serial_max(int *, int);//	SERIAL WAY FOR FIND MAX ELEMENT
-int rec_max(int *, int);//		RECURSION WAY FOR FIND MAX ELEMENT
+int rec_max(int *, int);//	RECURSION WAY FOR FIND MAX ELEMENT
 
 
     int main() {
@@ -23,9 +22,9 @@ int rec_max(int *, int);//		RECURSION WAY FOR FIND MAX ELEMENT
     	
     	for(i = 0; i < N; i++) 
     		if((rand() % random) % 2 == 0) //	POSSITIVE VALUES
-    			T[i] = rand() % random;
-    		else						  //	NEGATIVE VALUES
-   			    T[i] = -1 * rand() % random;
+		   T[i] = rand() % random;
+    		else			       //  	NEGATIVE VALUES
+   		    T[i] = -1 * rand() % random;
     		
 		printf("\nTHE RECURSION WAY FOUND MAX ELEMENT : %d", rec_max(T, N));
 		printf("\nTHE SERIAL WAY FOUND MAX ELEMENT    : %d", serial_max(T, N));
