@@ -1,4 +1,4 @@
-//									FIND THE MAX ELEMENT WITH RECURSION				
+//								    ---	FIND THE MAX ELEMENT WITH RECURSION AND WITHOUT ---			
 
 #include<stdio.h>
 #include<stdlib.h>
